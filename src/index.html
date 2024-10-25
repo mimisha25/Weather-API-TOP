@@ -3,23 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather API</title>
   </head>
   <body>
-    <form>
-      <label for="search">City</label>
-      <input type="text" name="search" value="" id="search">
-      <button type="submit">Search</button>
-  </form>
-
-  <div id="day">
-      <h3></h3>
-      <div id="condition">
-          <h4></h4>
-          <p></p>
+    <div class="nav">
+      <div class="date"></div>
+      <div>
+        <form>
+          <label for="search">Search City</label>
+          <input type="text" name="search" value="" id="search">
+          <button type="submit">Search</button>
+      </form>
+    
       </div>
-  </div>
-
-
+    </div>
+      <div id="day">
+        <div id="today">      
+          <h3></h3>
+          <div id="condition">
+              <h4></h4>
+              <p></p>
+          </div>
+        </div>
+      </div>
+      <div id="week"></div>
   </body>
 </html>
