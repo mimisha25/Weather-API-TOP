@@ -1,6 +1,10 @@
 import{hours} from "./hourlyWeather.js";
 import{weeks} from "./weeklyWeather.js";
 
+export function render(url){
+    day(url);
+    week(url);
+}
 
 export async function render(){
     let response=await fetch(url);
