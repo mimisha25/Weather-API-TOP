@@ -15,11 +15,10 @@ welcome.append(todayDate);
 render(url);
 
 input.addEventListener("keyup", (e)=>{
-e.preventDefault();
-let pathArray = url.pathname.split("/");
-pathArray[pathArray.length - 2] = input.value;
-url.pathname=pathArray.join("/");
-})
+   let pathArray = url.pathname.split("/");
+   pathArray[pathArray.length - 2] = input.value;
+   url.pathname=pathArray.join("/");
+   })
 
 form.addEventListener("submit", async (e)=>{
     e.preventDefault();
