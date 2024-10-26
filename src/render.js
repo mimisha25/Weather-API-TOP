@@ -1,5 +1,6 @@
-import {url} from "./api.js";
 import{hours} from "./hourlyWeather.js";
+import{weeks} from "./weeklyWeather.js";
+
 
 export async function render(){
     let response=await fetch(url);
