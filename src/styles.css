@@ -4,21 +4,65 @@ body {
     color: white;
 }
 
-#day {
+form {
+    margin: 30px 50%;
+    display: inline-block;
+}
+
+#day,
+#week {
     background-color: rgb(62, 66, 132);
-    padding: 30px;
-    margin: 20px;
+    padding: 50px;
+    margin: 20px 100px;
     border-radius: 30px;
 }
 
-.timeContainer {
+.timeContainer,
+.weekly {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
 
-.timeDiv {
-    background-color: brown;
+.timeDiv,
+.weekDiv {
+    background-color: rgb(5, 15, 61);
     padding: 10px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.date {
+    margin-left: 200px;
+}
+
+#today {
+
+    h3,
+    #condition h4,
+    #condition p {
+        text-align: left;
+    }
+
 }
