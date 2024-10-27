@@ -25,3 +25,15 @@ async function day(url){
     document.querySelector("p").innerText=`Condition: ${json.currentConditions.conditions}`;
     document.querySelector("h4").innerText=`Temperature: ${json.currentConditions.temp} F`;
 }
+
+async function week(url){
+    let pathArray = url.pathname.split("/");
+    pathArray[pathArray.length - 1] = "next7days";
+    url.pathname=pathArray.join("/");
+     let response=await fetch(url);
+     if(!response.status==200){
+        throw new Error(`Errror! ${response.status}`)
+    }
+        let json = await response.json();
+    weeks(json);
+}
