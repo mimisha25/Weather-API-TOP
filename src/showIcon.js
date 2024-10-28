@@ -20,3 +20,11 @@ import thundershowersday from "./icons/thunder-showers-day.png";
 import wind from "./icons/wind.png";
 import thunder from "./icons/thunder.png";
 import thundershowersnight from "./icons/thunder-showers-night.png";
+
+
+const objImport=[
+    clearday, clearnight, cloudy, fog, hail, partlycloudyday,
+    partlycloudynight, rainsnowshowersday, rainsnowshowersnight, 
+    rainsnow, rain, showersday, showersnight, sleet, snowshowersday,
+    snowshowersnight, snow, thunderrain, thundershowersday, 
+    wind, thunder, thundershowersnight];
