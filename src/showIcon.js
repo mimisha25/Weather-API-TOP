@@ -28,3 +28,28 @@ const objImport=[
     rainsnow, rain, showersday, showersnight, sleet, snowshowersday,
     snowshowersnight, snow, thunderrain, thundershowersday, 
     wind, thunder, thundershowersnight];
+
+    const iconsArr = ["./icons/clear-day.png", 
+        "./icons/clear-night.png", 
+        "./icons/cloudy.png",
+        "./icons/fog.png",
+        "./icons/hail.png",
+        "./icons/partly-cloudy-day.png",
+        "./icons/partly-cloudy-night.png",
+        "./icons/rain-snow-showers-day.png",
+        "./icons/rain-snow-showers-night.png",
+        "./icons/rain-snow.png",
+        "./icons/rain.png",
+        "./icons/showers-day.png",
+        "./icons/showers-night.png",
+    "./icons/sleet.png",
+    "./icons/snow-showers-day.png",
+    "./icons/snow-showers-night.png",
+    "./icons/snow.png",
+    "./icons/thunder-rain.png",
+    "./icons/thunder-showers-day.png",
+    "./icons/wind.png",
+    "./icons/thunder.png",
+    "./icons/thunder-showers-night.png"
+    ];
+    
