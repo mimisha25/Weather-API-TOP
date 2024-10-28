@@ -67,6 +67,73 @@ const objImport=[
         // })
         
     
+        if(weatherCondition==="cloudy"){
+            img.src=cloudy;
+            div.appendChild(img);
+        }else  if(weatherCondition==="clear-day"){
+            img.src=clearday;
+            div.appendChild(img);
+        }else  if(weatherCondition==="clear-night"){
+            img.src=clearnight;
+            div.appendChild(img);
+        }else  if(weatherCondition==="fog"){
+            img.src=fog;
+            div.appendChild(img);
+        }else  if(weatherCondition==="hail"){
+            img.src=hail;
+            div.appendChild(img);
+        }else  if(weatherCondition==="partly-cloudy-day"){
+            img.src=partlycloudyday;
+            div.appendChild(img);
+        }else  if(weatherCondition==="partly-cloudy-night"){
+            img.src=partlycloudynight;
+            div.appendChild(img);
+        }else  if(weatherCondition==="rain-snow-showers-day"){
+            img.src=rainsnowshowersday;
+            div.appendChild(img);
+        }else  if(weatherCondition==="rain-snow-showers-night"){
+            img.src=rainsnowshowersnight;
+            div.appendChild(img);
+        }else  if(weatherCondition==="rain-snow"){
+            img.src=rainsnow;
+            div.appendChild(img);
+        }else  if(weatherCondition==="rain"){
+            img.src=rain;
+            div.appendChild(img);
+        }else  if(weatherCondition==="showers-day"){
+            img.src=showersday;
+            div.appendChild(img);
+        }else  if(weatherCondition==="showers-night"){
+            img.src=showersnight;
+            div.appendChild(img);
+        }else  if(weatherCondition==="sleet"){
+            img.src=sleet;
+            div.appendChild(img);
+        }else  if(weatherCondition==="snow-showers-day"){
+            img.src=snowshowersday;
+            div.appendChild(img);
+        }else  if(weatherCondition==="snow-showers-night"){
+            img.src=snowshowersnight;
+            div.appendChild(img);
+        }else  if(weatherCondition==="snow"){
+            img.src=snow;
+            div.appendChild(img);
+        }else  if(weatherCondition==="thunder-rain"){
+            img.src=thunderrain;
+            div.appendChild(img);
+        }else  if(weatherCondition==="thunder-showers-day"){
+            img.src=thundershowersday;
+            div.appendChild(img);
+        }else  if(weatherCondition==="wind"){
+            img.src=wind;
+            div.appendChild(img);
+        }else  if(weatherCondition==="thunder"){
+            img.src=thunder;
+            div.appendChild(img);
+        }else  if(weatherCondition==="thunder-showers-night"){
+            img.src=thundershowersnight;
+            div.appendChild(img);
+        }
             // for(let i=0; i<conditionsA.length;i++){
             //     if(conditionsA[i]===weatherCondition){
             //          let importDeclaration=conditionsA[i].replace(/-/g, "");
