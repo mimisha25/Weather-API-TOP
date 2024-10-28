@@ -53,3 +53,28 @@ const objImport=[
     "./icons/thunder-showers-night.png"
     ];
     
+    export function icon(weatherCondition, div, img){
+
+        // conditionsA.findIndex(e=>{
+        //     if(weatherCondition===e){
+        //         objImport.forEach(a=>{
+        //             let importDeclaration=e.replace(/-/g, "");
+        //             if(importDeclaration==a){
+        //                 console.log(a);
+        //             }
+        //         })
+        //     }
+        // })
+        
+    
+            // for(let i=0; i<conditionsA.length;i++){
+            //     if(conditionsA[i]===weatherCondition){
+            //          let importDeclaration=conditionsA[i].replace(/-/g, "");
+            //          for( const path of objImport){
+            //             if(importDeclaration===path){
+            //                 console.log("hey");
+            //             }
+            //          }
+            //     }   
+            // }
+        };
