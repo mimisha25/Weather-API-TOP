@@ -1,7 +1,9 @@
 const timeContainer = document.createElement("div");
 timeContainer.classList.add("timeContainer");
+const h3=document.createElement("h3");
+h3.innerText="Today's Hourly Weather";
+document.querySelector("#day").appendChild(h3)
 document.querySelector("#day").appendChild(timeContainer);
-
 
 export function hours(temps){
     for(let i=0; i<8; i++){
