@@ -5,7 +5,9 @@ h3.innerText="Today's Hourly Weather";
 document.querySelector("#day").appendChild(h3)
 document.querySelector("#day").appendChild(timeContainer);
 
+import {icon} from "./showIcon.js";
 export function hours(temps){
+    timeContainer.innerHTML="";
     for(let i=0; i<8; i++){
         const div = document.createElement("div");
         div.classList.add("timeDiv");
@@ -13,24 +15,15 @@ export function hours(temps){
         let shortTime= temps[i].datetime;
         shortTime=shortTime.slice(0, 5);
         h5.innerText=shortTime;
+
         const img=document.createElement("img");
         img.classList.add("imgIcon");
-        // if(temp[i].condition === "Clear"){
-        //     img.src="https://ssl.gstatic.com/onebox/weather/64/sunny.png";
-        //     div.appendChild(img);
-        // }else if(tem[i].condition === "Partially cloudy"){
-        //     img.src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png";
-        //     div.appendChild(img);
-        // }else if(tem[i].condition === "Clear"){
-        //     img.src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png";
-        //     div.appendChild(img);
-        // }else if(tem[i].condition === "Rain, Overcast"){
-        //     img.src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png";
-        //     div.appendChild(img);
-        // }
+        img.setAttribute("src", "");
+         let weatherCondition = temps[i].icon;
+        icon(weatherCondition, div, img);
 
-        const h6=document.createElement("h6");
-         h6.innerText=temps[i].temp;
+        const h6=document.createElement("h5");
+         h6.innerText=`${temps[i].temp} F`;
         div.appendChild(h5);
         div.appendChild(h6);
         timeContainer.appendChild(div);
