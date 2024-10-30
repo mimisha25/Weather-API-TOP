@@ -23,7 +23,7 @@ input.addEventListener("keyup", (e)=>{
 form.addEventListener("submit", async (e)=>{
     e.preventDefault();
    try{
-r();
+render(url);
    }catch (e){
            alert(`Errrror for total: ${e}`)
    }
