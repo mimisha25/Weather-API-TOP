@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather API</title>
-  </head>
-  <body>
-    <div class="nav">
-      <div class="date"></div>
-      <div>
-        <form>
-          <label for="search">Search City</label>
-          <input type="text" name="search" value="" id="search">
-          <button type="submit">Search</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather API</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="nav">
+    <div class="date"></div>
+    <div>
+      <form>
+        <label for="search">Search City</label>
+        <input type="text" name="search" value="" id="search">
+        <button type="submit">Search</button>
       </form>
-    
+
+    </div>
+  </div>
+  <div id="day">
+    <div id="today">
+      <h3></h3>
+      <div id="condition">
+        <h4></h4>
+        <p></p>
       </div>
     </div>
-      <div id="day">
-        <div id="today">      
-          <h3></h3>
-          <div id="condition">
-              <h4></h4>
-              <p></p>
-          </div>
-        </div>
-      </div>
-      <div id="week"></div>
-  </body>
+  </div>
+  <div id="week"></div>
+</body>
+
 </html>
