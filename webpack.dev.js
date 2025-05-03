@@ -18,7 +18,7 @@ module.exports = merge(common, {
     ],
   },
   optimization: {
-    minimize: true,
+    minimize: false,
   },
   plugins: [new MiniCssExtractPlugin()],
 });
